@@ -1,6 +1,7 @@
-// npm i express --save
-// npm i -S react react-dom
-// npm --save-dev i webpack
-// npm i -D babel-cli babel-loader babel-preset-es2015 babel-preset-stage-2 babel-preset-react
-// npm i -D nodemon
-// npm i -D eslint eslint-plugin-react babel-eslint
+npm i express --save
+npm i -S react react-dom
+npm --save-dev i webpack
+npm i -D babel-cli babel-loader babel-preset-es2015 babel-preset-stage-2 babel-preset-react
+npm i -D nodemon
+npm i -D eslint eslint-plugin-react babel-eslint
+npm i -S ejs
