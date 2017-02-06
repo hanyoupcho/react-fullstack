@@ -1,25 +1,23 @@
-import https from 'https';
-import http from 'http';
-//import config, {nodeEnv, logStars} from './config';
-// logStars('Function');
+import config from './config';
+import apiRouter from './api';
+//import fs from 'fs';
 
-// https.get('https://www.lynda.com', res => {
-// 	console.log('Response status code: ', res.statusCode);
+import express from 'express';
+const server = express();
 
-// 	res.on('data', chunk => {
-// 		console.log(chunk.toString());
+server.get('/', (req, res) => {
+	res.send('Hello Express\n');
+});
+
+server.use('/api', apiRouter);
+server.use(express.static('public'));
+
+// server.get('/about.html', (req, res) => {
+// 	fs.readFile('./about.html', (err, data) => {
+// 		res.send(data.toString());
 // 	});
 // });
 
-const server = http.createServer();
-
-server.listen(8080);
-
-server.on('request', (req, res) => {
-	res.write('Hello HTTP!\n');
-	setTimeout(() => {
-		res.write('I can stream!\n');
-		res.end();
-	}, 3000);
+server.listen(config.port, () => {
+	console.info('Express listening on port ', config.port);
 });
-
