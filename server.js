@@ -23,9 +23,6 @@ server.get('/', (req, res) => {
 			});
 		})
 		.catch(console.error);
-	// res.render('index', {
-	// 	content: '...'
-	// });
 });
 
 server.use('/api', apiRouter);

@@ -15,8 +15,8 @@ class App extends React.Component {
     return (
 			<div className = "App">
 				<Header message = {this.state.pageHeader} />
-				<ContestList contests={this.state.contests} />
-			</div>
+        <ContestList contests = {this.state.contests} />
+      </div>
     );
   }
 }
