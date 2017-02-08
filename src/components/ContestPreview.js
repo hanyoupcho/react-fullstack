@@ -1,6 +1,6 @@
 import React from 'react';
 
-const ContestsPreview = (contest) => (
+const ContestPreview = (contest) => (
   <div className='ContestPreview'>
     <div className='category-name'>
       {contest.categoryName}
@@ -11,4 +11,4 @@ const ContestsPreview = (contest) => (
   </div>
 );
 
-export default ContestsPreview;
+export default ContestPreview;

@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOMServer from 'react-dom/server';
 
-import App from './src/component/app';
+import App from './src/components/app';
 
 import config from './config';
 import axios from 'axios';
